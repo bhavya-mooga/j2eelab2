@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Socket Machine</title>
+</head>
+<body>
+    <form action="/SocketMachineApp/SocketMachineServlet" method="post">
+        <label for="socketType">Socket Type:</label>
+        <select name="socketType" id="socketType" required>
+            <option value="TYPE_A">Type A</option>s
+            <option value="TYPE_B">Type B</option>
+            <option value="TYPE_C">Type C</option>
+        </select>
+        <br><br>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" required min="1">
+        <br><br>
+        <label for="customer_name">Customer Name:</label>
+        <input type="text" id="customer_name" name="customer_name" required>
+        <br><br>
+        <label for="customer_email">Customer Email:</label>
+        <input type="email" id="customer_email" name="customer_email" required>
+        <br><br>
+        <input type="submit" value="Get Quote">
+    </form>
+</body>
+</html>
